@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "mint": "npx tsc ./scripts/mint-nft.ts && node ./scripts/mint-nft.js"
+  },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
     "@ethersproject/providers": "^5.4.7",
@@ -26,7 +29,11 @@
     "typescript": ">=4.5.0"
   },
   "dependencies": {
+    "@alch/alchemy-web3": "^1.4.7",
     "@openzeppelin/contracts": "^4.8.0",
     "dotenv": "^16.0.3"
+  },
+  "engines": {
+    "node": ">=14.x"
   }
 }

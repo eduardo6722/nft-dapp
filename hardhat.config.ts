@@ -1,5 +1,5 @@
 import '@nomicfoundation/hardhat-toolbox';
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 import { HardhatUserConfig } from 'hardhat/config';
 
 dotenv.config();
